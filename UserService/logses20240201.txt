@@ -1,0 +1,121 @@
+2024-02-01 22:07:48.704 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 22:07:49.133 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 22:07:50.553 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 22:07:50.554 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 22:07:50.554 +04:00 [INF] Hosting environment: Development
+2024-02-01 22:07:50.554 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 22:07:50.628 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 22:07:57.144 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger - null null
+2024-02-01 22:07:57.775 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger - 301 0 null 642.1932ms
+2024-02-01 22:07:57.778 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 22:07:57.955 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 177.0696ms
+2024-02-01 22:07:58.028 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-bundle.js - null null
+2024-02-01 22:07:58.029 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui.css - null null
+2024-02-01 22:07:58.031 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 22:07:58.031 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 22:07:58.031 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-standalone-preset.js - null null
+2024-02-01 22:07:58.034 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.7216ms
+2024-02-01 22:07:58.139 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-01 22:07:58.139 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-01 22:07:58.142 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 110.7476ms
+2024-02-01 22:07:58.145 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui.css - 200 144929 text/css 116.7796ms
+2024-02-01 22:07:58.175 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-01 22:07:58.176 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 148.2817ms
+2024-02-01 22:07:58.282 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 251.0689ms
+2024-02-01 22:07:58.579 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 22:07:58.621 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/favicon-32x32.png - null null
+2024-02-01 22:07:58.622 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-01 22:07:58.622 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/favicon-32x32.png - 200 628 image/png 0.9867ms
+2024-02-01 22:07:58.812 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 234.38ms
+2024-02-01 23:13:59.003 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 23:14:00.640 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 23:14:03.998 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:14:04.576 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 23:14:04.577 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:14:04.577 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:14:04.577 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 23:14:15.801 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 23:14:16.545 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 761.2836ms
+2024-02-01 23:14:16.631 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:14:16.635 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.4322ms
+2024-02-01 23:14:16.635 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 23:14:16.759 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.9296ms
+2024-02-01 23:14:17.221 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:14:17.811 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 589.82ms
+2024-02-01 23:14:45.837 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:14:45.870 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.6724ms
+2024-02-01 23:16:18.745 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 23:16:19.179 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 23:16:20.139 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 23:16:20.140 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:16:20.140 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:16:20.140 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 23:16:20.225 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:16:31.016 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 23:16:31.398 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 389.7111ms
+2024-02-01 23:16:31.492 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 23:16:31.492 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:16:31.496 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.7284ms
+2024-02-01 23:16:31.560 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.0027ms
+2024-02-01 23:16:31.685 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:16:31.890 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 204.7557ms
+2024-02-01 23:19:55.727 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 23:19:56.016 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 23:19:56.646 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 23:19:56.647 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:19:56.647 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:19:56.647 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 23:19:56.791 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:20:05.476 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 23:20:06.227 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 761.8177ms
+2024-02-01 23:20:06.418 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:20:06.434 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 15.5784ms
+2024-02-01 23:20:06.437 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 23:20:07.179 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 741.7304ms
+2024-02-01 23:20:07.448 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:20:08.131 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 682.738ms
+2024-02-01 23:21:13.256 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 23:21:13.626 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 23:21:14.489 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 23:21:14.489 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:21:14.489 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:21:14.490 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 23:21:14.588 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:21:24.259 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 23:21:25.512 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1262.2806ms
+2024-02-01 23:21:25.604 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:21:25.614 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 23:21:25.614 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 9.7306ms
+2024-02-01 23:21:25.749 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.238ms
+2024-02-01 23:21:25.877 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:21:26.267 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 390.4728ms
+2024-02-01 23:27:02.154 +04:00 [INF] User profile is available. Using 'C:\Users\aliga.DESKTOP-KFGEO6Q\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-01 23:27:02.498 +04:00 [INF] Configured endpoint UserSearchConsumerQueue, Consumer: UserService.Rabbit.SearchRequestHandler
+2024-02-01 23:27:03.567 +04:00 [INF] Now listening on: http://localhost:5229
+2024-02-01 23:27:03.568 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:27:03.568 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:27:03.568 +04:00 [INF] Content root path: A:\Tz\UserService
+2024-02-01 23:27:03.649 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:27:15.748 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/index.html - null null
+2024-02-01 23:27:16.821 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/index.html - 200 null text/html;charset=utf-8 1058.57ms
+2024-02-01 23:27:27.898 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_vs/browserLink - null null
+2024-02-01 23:27:27.898 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:27:27.906 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 7.176ms
+2024-02-01 23:27:28.037 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_vs/browserLink - 200 null text/javascript; charset=UTF-8 139.4061ms
+2024-02-01 23:27:28.141 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:27:28.394 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 252.5109ms
+2024-02-01 23:27:41.929 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/api/users - null null
+2024-02-01 23:27:41.950 +04:00 [WRN] Failed to determine the https port for redirect.
+2024-02-01 23:27:47.447 +04:00 [INF] Executing endpoint 'UserService.Controllers.UsersController.GetAllUser (UserService)'
+2024-02-01 23:27:47.556 +04:00 [INF] Route matched with {action = "GetAllUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllUser() on controller UserService.Controllers.UsersController (UserService).
+2024-02-01 23:27:53.629 +04:00 [INF] Executed DbCommand (200ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+SELECT [u].[Id], [u].[PasswordHash], [u].[Salt], [u].[Token], [u].[Username]
+FROM [Users] AS [u]
+2024-02-01 23:27:53.765 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UserService.Data.User, UserService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-01 23:27:53.799 +04:00 [INF] Executed action UserService.Controllers.UsersController.GetAllUser (UserService) in 6230.6836ms
+2024-02-01 23:27:53.801 +04:00 [INF] Executed endpoint 'UserService.Controllers.UsersController.GetAllUser (UserService)'
+2024-02-01 23:27:53.833 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/api/users - 200 null application/json; charset=utf-8 11904.6592ms
+2024-02-01 23:33:55.683 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:33:55.684 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.8001ms
+2024-02-01 23:33:58.109 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - null null
+2024-02-01 23:33:58.154 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5229/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.1131ms

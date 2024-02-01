@@ -1,0 +1,277 @@
+2024-02-01 19:14:33.558 +00:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 19:14:33.679 +00:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 19:14:34.388 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:14:35.057 +00:00 [INF] Now listening on: http://[::]:8080
+2024-02-01 19:14:35.058 +00:00 [INF] Now listening on: https://[::]:8081
+2024-02-01 19:14:35.059 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 19:14:35.060 +00:00 [INF] Hosting environment: Development
+2024-02-01 19:14:35.060 +00:00 [INF] Content root path: /app
+2024-02-01 19:14:41.532 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:16:27.412 +00:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 19:16:27.486 +00:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 19:16:28.045 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:16:28.670 +00:00 [INF] Now listening on: http://[::]:8080
+2024-02-01 19:16:28.671 +00:00 [INF] Now listening on: https://[::]:8081
+2024-02-01 19:16:28.671 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 19:16:28.672 +00:00 [INF] Hosting environment: Development
+2024-02-01 19:16:28.672 +00:00 [INF] Content root path: /app
+2024-02-01 19:16:35.507 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:16:45.325 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:17:03.261 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 19:17:32.231 +00:00 [WRN] Connection Failed: "rabbitmq://localhost/"
+RabbitMQ.Client.Exceptions.BrokerUnreachableException: None of the specified endpoints were reachable
+ ---> System.AggregateException: One or more errors occurred. (Connection failed)
+ ---> RabbitMQ.Client.Exceptions.ConnectFailureException: Connection failed
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at RabbitMQ.Client.TcpClientAdapter.ConnectAsync(String host, Int32 port)
+   at RabbitMQ.Client.Impl.TaskExtensions.TimeoutAfter(Task task, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectOrFail(ITcpClient socket, AmqpTcpEndpoint endpoint, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingAddressFamily(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout, AddressFamily family)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ConnectUsingIPv4(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan timeout)
+   at RabbitMQ.Client.Impl.SocketFrameHandler..ctor(AmqpTcpEndpoint endpoint, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.Framing.Impl.IProtocolExtensions.CreateFrameHandler(IProtocol protocol, AmqpTcpEndpoint endpoint, ArrayPool`1 pool, Func`2 socketFactory, TimeSpan connectionTimeout, TimeSpan readTimeout, TimeSpan writeTimeout)
+   at RabbitMQ.Client.ConnectionFactory.CreateFrameHandler(AmqpTcpEndpoint endpoint)
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.EndpointResolverExtensions.SelectOne[T](IEndpointResolver resolver, Func`2 selector)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IEndpointResolver endpointResolver, String clientProvidedName)
+   at RabbitMQ.Client.ConnectionFactory.CreateConnection(IList`1 hostnames, String clientProvidedName)
+   at MassTransit.RabbitMqTransport.ConnectionContextFactory.CreateConnection(ISupervisor supervisor) in /_/src/Transports/MassTransit.RabbitMqTransport/RabbitMqTransport/ConnectionContextFactory.cs:line 86
+2024-02-01 23:18:42.104 +04:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 23:18:42.178 +04:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 23:18:42.923 +04:00 [INF] Now listening on: http://localhost:5072
+2024-02-01 23:18:42.923 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:18:42.923 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:18:42.923 +04:00 [INF] Content root path: A:\Tz\ProductService
+2024-02-01 23:18:43.036 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:18:53.670 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger - null null
+2024-02-01 23:18:53.920 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger - 301 0 null 259.3328ms
+2024-02-01 23:18:53.922 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/index.html - null null
+2024-02-01 23:18:54.095 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/index.html - 200 null text/html;charset=utf-8 172.3174ms
+2024-02-01 23:18:54.868 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui.css - null null
+2024-02-01 23:18:54.868 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui-bundle.js - null null
+2024-02-01 23:18:54.868 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui-standalone-preset.js - null null
+2024-02-01 23:18:54.869 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:18:54.870 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_vs/browserLink - null null
+2024-02-01 23:18:54.873 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 3.2855ms
+2024-02-01 23:18:54.927 +04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-01 23:18:54.927 +04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-01 23:18:54.932 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui.css - 200 144929 text/css 64.4209ms
+2024-02-01 23:18:54.932 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 64.5205ms
+2024-02-01 23:18:54.941 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.8369ms
+2024-02-01 23:18:54.947 +04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-01 23:18:54.948 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 80.5476ms
+2024-02-01 23:18:55.298 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - null null
+2024-02-01 23:18:55.338 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/favicon-32x32.png - null null
+2024-02-01 23:18:55.341 +04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-01 23:18:55.342 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/favicon-32x32.png - 200 628 image/png 3.3808ms
+2024-02-01 23:18:55.503 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 204.7778ms
+2024-02-01 23:19:54.949 +04:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 23:19:55.016 +04:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 23:19:55.774 +04:00 [INF] Now listening on: http://localhost:5072
+2024-02-01 23:19:55.775 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:19:55.775 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:19:55.775 +04:00 [INF] Content root path: A:\Tz\ProductService
+2024-02-01 23:19:55.847 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:20:05.195 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/index.html - null null
+2024-02-01 23:20:06.189 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/index.html - 200 null text/html;charset=utf-8 1017.5196ms
+2024-02-01 23:20:06.328 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:20:06.366 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_vs/browserLink - null null
+2024-02-01 23:20:06.370 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 42.2153ms
+2024-02-01 23:20:07.226 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 860.1235ms
+2024-02-01 23:20:07.483 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - null null
+2024-02-01 23:20:07.873 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 389.7344ms
+2024-02-01 23:21:13.544 +04:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 23:21:13.618 +04:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 23:21:14.480 +04:00 [INF] Now listening on: http://localhost:5072
+2024-02-01 23:21:14.481 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:21:14.481 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:21:14.481 +04:00 [INF] Content root path: A:\Tz\ProductService
+2024-02-01 23:21:14.589 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:21:25.247 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/index.html - null null
+2024-02-01 23:21:26.345 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/index.html - 200 null text/html;charset=utf-8 1105.7851ms
+2024-02-01 23:21:26.533 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:21:26.553 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_vs/browserLink - null null
+2024-02-01 23:21:26.767 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 236.4585ms
+2024-02-01 23:21:26.838 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 285.2743ms
+2024-02-01 23:21:27.017 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - null null
+2024-02-01 23:21:27.432 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 415.181ms
+2024-02-01 23:27:02.223 +04:00 [INF] Configured endpoint ProductSearchConsumerQueue, Consumer: ProductService.Rabbit.SearchRequestHandler
+2024-02-01 23:27:02.282 +04:00 [INF] Configured endpoint ListProductsOrderConsumer, Consumer: ProductService.Rabbit.OrderRequestHandler
+2024-02-01 23:27:03.161 +04:00 [INF] Now listening on: http://localhost:5072
+2024-02-01 23:27:03.161 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-01 23:27:03.161 +04:00 [INF] Hosting environment: Development
+2024-02-01 23:27:03.161 +04:00 [INF] Content root path: A:\Tz\ProductService
+2024-02-01 23:27:03.326 +04:00 [INF] Bus started: "rabbitmq://localhost/"
+2024-02-01 23:27:15.355 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/index.html - null null
+2024-02-01 23:27:16.306 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/index.html - 200 null text/html;charset=utf-8 963.9655ms
+2024-02-01 23:27:16.382 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-01 23:27:16.394 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.6561ms
+2024-02-01 23:27:19.857 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/_vs/browserLink - null null
+2024-02-01 23:27:19.960 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.6881ms
+2024-02-01 23:27:20.165 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - null null
+2024-02-01 23:27:20.533 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5072/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 368.3602ms

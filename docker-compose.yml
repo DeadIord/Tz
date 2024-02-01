@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  searchservice:
+    build:
+      context: .
+      dockerfile: ./SearchService/Dockerfile
+    ports:
+      - "8081:8081"
+
+  productservice:
+    build:
+      context: .
+      dockerfile: ./ProductService/Dockerfile
+    ports:
+      - "8080:8080"
+
+  userservice:
+    build:
+      context: .
+      dockerfile: ./UserService/Dockerfile
+    ports:
+      - "8082:8080"
