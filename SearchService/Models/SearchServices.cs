@@ -5,13 +5,13 @@ using SearchService.Core.Commands;
 
 namespace SearchService
 {
-
-
-
-    public class SearchServices(IRequestClient<UserSearchRequest> UserSearchRequestClient, IRequestClient<ProductSearchRequest> ProductSearchRequestClient, ILogger<SearchServices> logger)
+    public class SearchServices(
+        IRequestClient<UserSearchRequest> userSearchRequestClient, 
+        IRequestClient<ProductSearchRequest> productSearchRequestClient, 
+        ILogger<SearchServices> logger) 
     {
-        private readonly IRequestClient<UserSearchRequest> _UserSearchRequestClient = UserSearchRequestClient;
-        private readonly IRequestClient<ProductSearchRequest> _ProductSearchRequestClient = ProductSearchRequestClient;
+        private readonly IRequestClient<UserSearchRequest> _UserSearchRequestClient = userSearchRequestClient;
+        private readonly IRequestClient<ProductSearchRequest> _ProductSearchRequestClient = productSearchRequestClient;
         private readonly ILogger<SearchServices> _logger = logger;
 
         public async Task<List<object>> SearchProductAsync(string text)

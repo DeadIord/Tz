@@ -14,13 +14,29 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+
 builder.Services.AddDbContext<AddProductDbContext>(options =>
            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ProductServices>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddSwaggerGen();
+builder.Services.AddEndpointsApiExplorer(); 
+builder.Services.AddSwaggerGen(x =>
+{
+    x.SwaggerDoc("v1", new OpenApiInfo { Description = "TEST" });
+
+    var entryAssembly = Assembly.GetEntryAssembly();
+    var xmlDocs = entryAssembly!.GetReferencedAssemblies()
+    .Union(new AssemblyName[] { entryAssembly.GetName() })
+    .Select(a => Path.Combine(Path.GetDirectoryName(entryAssembly.Location)!, $"{a.Name}.xml"))
+    .Where(f => File.Exists(f))
+    .ToArray();
+    foreach (var item in xmlDocs)
+    {
+        x.IncludeXmlComments(item);
+    }
+});
 
 
 builder.Services.AddMassTransit(config =>
@@ -43,32 +59,22 @@ builder.Services.AddMassTransit(config =>
             x.ConfigureConsumeTopology = false;
             x.Bind("ListProductsOrderConsumerExchange");
         });
-        cfg.Host(new Uri(rabbitMqConfig["Hostname"]!), h =>
-        {
-            h.Username(rabbitMqConfig["Username"]);
-            h.Password(rabbitMqConfig["Password"]);
-        });
+         cfg.Host(rabbitMqConfig.GetValue<string>("Hostname"), rabbitMqConfig.GetValue<ushort>("Port"), "/", h =>
+    {
+        h.Username(rabbitMqConfig.GetValue<string>("Username"));
+        h.Password(rabbitMqConfig.GetValue<string>("Password"));
+    });
     });
 
 });
 
-Log.Logger = new LoggerConfiguration()
 
-      .WriteTo.File("logses.txt", rollingInterval: RollingInterval.Day)
-      .CreateLogger();
-builder.Services.AddLogging(loggingBuilder =>
-{
-    loggingBuilder.ClearProviders();
-    loggingBuilder.AddSerilog();
-});
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 app.UseHttpsRedirection();
 
